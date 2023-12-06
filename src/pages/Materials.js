@@ -1,9 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
+export const Materials = () => {
+    return (
+        <div className="App">
       <header className="App-header">
     Student e-connect
     <nav className='nav-bar'> 
@@ -15,8 +12,14 @@ function App() {
     </ul>
     </nav>
     </header>
+    <div className='searchBar-section'>
+      <div className='searchbar'>
+          <input type="text" class="searchTerm" placeholder="What are you looking for?"></input>
+          <button type="submit" class="searchButton">Go</button>
+      </div>
+    </div>
     <section>
-      <div className='section-title'>Schedule<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg></div>
+      <div className='section-title'>Materials<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg></div>
       <div className='section-content'>
       <div className='cards'>
           <img src='https://static.vecteezy.com/system/resources/thumbnails/022/006/618/small/science-background-illustration-scientific-design-flasks-glass-and-chemistry-physics-elements-generative-ai-photo.jpeg'></img>
@@ -90,7 +93,7 @@ function App() {
       </div>
     </section>
     </div>
-  );
-}
 
-export default App;
+    );
+    
+}
